@@ -1,7 +1,8 @@
-import tcp from "k6/x/tcp-crypto-tls";
+#import tcp from "k6/x/tcp-crypto-tls";
+import { TCP } from 'k6/x/tcp-crypto-tls';
 
 export default function () {
-  const address = "example.com:443"; // HTTPSサーバーのアドレス
+  const address = "google.com:443"; // HTTPSサーバーのアドレス
   const conn = tcp.ConnectTLS(address, true); // TLS接続
   console.log(`Connected to ${address}`);
 
