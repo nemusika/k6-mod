@@ -1,4 +1,4 @@
-package tcp
+package tcp-crypto-tls
 
 import (
 	"crypto/tls"
