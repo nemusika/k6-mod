@@ -1,5 +1,5 @@
-#import tcp from "k6/x/tcp-crypto-tls";
-import { TCP } from 'k6/x/tcp-crypto-tls';
+import tcp from "k6/x/tcp-crypto-tls"; // デフォルトエクスポート
+// import { TCP } from 'k6/x/tcp-crypto-tls'; // 名前付きエクスポート
 
 export default function () {
   const address = "google.com:443"; // HTTPSサーバーのアドレス
